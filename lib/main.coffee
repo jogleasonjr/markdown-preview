@@ -53,6 +53,8 @@ module.exports =
     atom.commands.add 'atom-workspace',
       'markdown-preview:toggle': =>
         @toggle()
+      'markdown-preview:toggleGithubStyle': =>
+        @toggleGithubStyle()
       'markdown-preview:copy-html': =>
         @copyHtml()
       'markdown-preview:toggle-break-on-single-newline': ->
@@ -98,6 +100,10 @@ module.exports =
     return unless editor.getGrammar().scopeName in grammars
 
     @addPreviewForEditor(editor) unless @removePreviewForEditor(editor)
+
+  toggleGithubStyle: ->
+      keyPath = 'markdown-preview.useGitHubStyle'
+      atom.config.set(keyPath, not atom.config.get(keyPath))
 
   uriForEditor: (editor) ->
     "markdown-preview://editor/#{editor.id}"

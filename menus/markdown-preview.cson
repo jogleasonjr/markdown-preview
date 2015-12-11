@@ -3,8 +3,8 @@
   'submenu': [
     'label': 'Markdown Preview'
     'submenu': [
-      'label': 'Toggle Preview'
-      'command': 'markdown-preview:toggle'
+      {'label': 'Toggle Preview', 'command': 'markdown-preview:toggle'}
+      {'label': 'Toggle GitHub Style', 'command': 'markdown-preview:toggleGithubStyle'}
     ]
   ]
 ]
@@ -15,16 +15,16 @@
     {label: 'Save As HTML\u2026', command: 'core:save-as'}
   ]
   '.tree-view .file .name[data-name$=\\.markdown]':
-    [{label: 'Markdown Preview', command:  'markdown-preview:preview-file'}]
+    [{label: 'Markdown Preview', command: 'markdown-preview:preview-file'}]
   '.tree-view .file .name[data-name$=\\.md]':
-    [{label: 'Markdown Preview', command:  'markdown-preview:preview-file'}]
+    [{label: 'Markdown Preview', command: 'markdown-preview:preview-file'}]
   '.tree-view .file .name[data-name$=\\.mdown]':
-    [{label: 'Markdown Preview', command:  'markdown-preview:preview-file'}]
+    [{label: 'Markdown Preview', command: 'markdown-preview:preview-file'}]
   '.tree-view .file .name[data-name$=\\.mkd]':
-    [{label: 'Markdown Preview', command:  'markdown-preview:preview-file'}]
+    [{label: 'Markdown Preview', command: 'markdown-preview:preview-file'}]
   '.tree-view .file .name[data-name$=\\.mkdown]':
-    [{label: 'Markdown Preview', command:  'markdown-preview:preview-file'}]
+    [{label: 'Markdown Preview', command: 'markdown-preview:preview-file'}]
   '.tree-view .file .name[data-name$=\\.ron]':
-    [{label: 'Markdown Preview', command:  'markdown-preview:preview-file'}]
+    [{label: 'Markdown Preview', command: 'markdown-preview:preview-file'}]
   '.tree-view .file .name[data-name$=\\.txt]':
-    [{label: 'Markdown Preview', command:  'markdown-preview:preview-file'}]
+    [{label: 'Markdown Preview', command: 'markdown-preview:preview-file'}]
